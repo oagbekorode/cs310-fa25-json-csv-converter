@@ -8,6 +8,7 @@ public class JsonToCsvConverterTest {
 
     private String csvString, jsonString;
     private JsonObject json;
+
     
     @Before
     public void setUp() {
@@ -44,7 +45,7 @@ public class JsonToCsvConverterTest {
         try {
             
             String testCsvString = Converter.jsonToCsv(jsonString);
-            
+
             assertEquals(csvString, testCsvString);
             
         }
